@@ -1,0 +1,507 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-05-22T23:31:49.263Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "runner.Runner.beforeHook()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "CRUD",
+        "description": "",
+        "id": "project;crud",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "runner.Runner.afterHook()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I have access to API todo.ly",
+            "match": {
+              "location": "runner.MyStepClean.iHaveAccessToAPITodoLy()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1857000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I send a request POST to \"CREATE_PROJECT\" with body",
+            "match": {
+              "arguments": [
+                {
+                  "val": "POST",
+                  "offset": 17
+                },
+                {
+                  "val": "\"CREATE_PROJECT\"",
+                  "offset": 25
+                }
+              ],
+              "location": "runner.MyStepClean.iSendARequestPOSTToWithBody(java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "When ",
+            "doc_string": {
+              "line": 9,
+              "value": "{\n  \"Content\":\"CUCUMBER\",\n  \"Icon\":\"2\"\n}"
+            }
+          },
+          {
+            "result": {
+              "duration": 30000000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I expected the response code is 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 32
+                }
+              ],
+              "location": "runner.MyStepClean.iExpectedTheResponseCodeIs(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 9000000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I expected the response body",
+            "match": {
+              "location": "runner.MyStepClean.iExpectedTheResponseBody(java.lang.String)"
+            },
+            "keyword": "And ",
+            "doc_string": {
+              "line": 17,
+              "value": "{\n  \"Id\": \"IGNORE\",\n  \"Content\": \"CUCUMBER\",\n  \"ItemsCount\": 0,\n  \"Icon\": 2,\n  \"ItemType\": 2,\n  \"ParentId\": null,\n  \"Collapsed\": false,\n  \"ItemOrder\": \"IGNORE\",\n  \"Children\": [\n\n  ],\n  \"IsProjectShared\": false,\n  \"ProjectShareOwnerName\": null,\n  \"ProjectShareOwnerEmail\": null,\n  \"IsShareApproved\": false,\n  \"IsOwnProject\": true,\n  \"LastSyncedDateTime\": \"IGNORE\",\n  \"LastUpdatedDate\": \"IGNORE\",\n  \"Deleted\": false,\n  \"SyncClientCreationId\": null\n}"
+            }
+          },
+          {
+            "result": {
+              "duration": 485000000,
+              "status": "passed"
+            },
+            "line": 41,
+            "name": "I save the property Id in ID_PROJECT",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Id",
+                  "offset": 20
+                },
+                {
+                  "val": "ID_PROJECT",
+                  "offset": 26
+                }
+              ],
+              "location": "runner.MyStepClean.iSaveThePropertyIdInID_PROJECT(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 410000000,
+              "status": "passed"
+            },
+            "line": 42,
+            "name": "I send a request PUT to \"UPDATE_PROJECT\" with ID : ID_PROJECT with body",
+            "match": {
+              "arguments": [
+                {
+                  "val": "PUT",
+                  "offset": 17
+                },
+                {
+                  "val": "\"UPDATE_PROJECT\"",
+                  "offset": 24
+                },
+                {
+                  "val": "ID_PROJECT",
+                  "offset": 51
+                }
+              ],
+              "location": "runner.MyStepClean.iSendARequestPUTToWithIDID_PROJECTWithBody(java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "When ",
+            "doc_string": {
+              "line": 43,
+              "value": "{\n  \"Content\":\"CUCUMBER UPDATE\",\n  \"Icon\":\"3\"\n}"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 49,
+            "name": "I expected the response code is 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 32
+                }
+              ],
+              "location": "runner.MyStepClean.iExpectedTheResponseCodeIs(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 50,
+            "name": "I expected the response body",
+            "match": {
+              "location": "runner.MyStepClean.iExpectedTheResponseBody(java.lang.String)"
+            },
+            "keyword": "And ",
+            "doc_string": {
+              "line": 51,
+              "value": "{\n  \"Id\": \"IGNORE\",\n  \"Content\": \"CUCUMBER UPDATE\",\n  \"ItemsCount\": 0,\n  \"Icon\": 3,\n  \"ItemType\": 2,\n  \"ParentId\": null,\n  \"Collapsed\": false,\n  \"ItemOrder\": \"IGNORE\",\n  \"Children\": [\n\n  ],\n  \"IsProjectShared\": false,\n  \"ProjectShareOwnerName\": null,\n  \"ProjectShareOwnerEmail\": null,\n  \"IsShareApproved\": false,\n  \"IsOwnProject\": true,\n  \"LastSyncedDateTime\": \"IGNORE\",\n  \"LastUpdatedDate\": \"IGNORE\",\n  \"Deleted\": false,\n  \"SyncClientCreationId\": null\n}"
+            }
+          },
+          {
+            "result": {
+              "duration": 381000000,
+              "status": "passed"
+            },
+            "line": 75,
+            "name": "I send a request DELETE to \"DELETE_PROJECT\" with ID : ID_PROJECT with body",
+            "match": {
+              "arguments": [
+                {
+                  "val": "DELETE",
+                  "offset": 17
+                },
+                {
+                  "val": "\"DELETE_PROJECT\"",
+                  "offset": 27
+                },
+                {
+                  "val": "ID_PROJECT",
+                  "offset": 54
+                }
+              ],
+              "location": "runner.MyStepClean.iSendARequestPUTToWithIDID_PROJECTWithBody(java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "When ",
+            "doc_string": {
+              "line": 76,
+              "value": ""
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 78,
+            "name": "I expected the response code is 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 32
+                }
+              ],
+              "location": "runner.MyStepClean.iExpectedTheResponseCodeIs(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 79,
+            "name": "I expected the response body",
+            "match": {
+              "location": "runner.MyStepClean.iExpectedTheResponseBody(java.lang.String)"
+            },
+            "keyword": "And ",
+            "doc_string": {
+              "line": 80,
+              "value": "{\n  \"Id\": \"IGNORE\",\n  \"Content\": \"CUCUMBER UPDATE\",\n  \"ItemsCount\": 0,\n  \"Icon\": 3,\n  \"ItemType\": 2,\n  \"ParentId\": null,\n  \"Collapsed\": false,\n  \"ItemOrder\": \"IGNORE\",\n  \"Children\": [\n\n  ],\n  \"IsProjectShared\": false,\n  \"ProjectShareOwnerName\": null,\n  \"ProjectShareOwnerEmail\": null,\n  \"IsShareApproved\": false,\n  \"IsOwnProject\": true,\n  \"LastSyncedDateTime\": \"IGNORE\",\n  \"LastUpdatedDate\": \"IGNORE\",\n  \"Deleted\": true,\n  \"SyncClientCreationId\": null\n}"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@JBGroup"
+          }
+        ]
+      }
+    ],
+    "name": "Project",
+    "description": "",
+    "id": "project",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/CRUDProjectClean.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-05-22T23:31:52.496Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "runner.Runner.beforeHook()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "como usuario quiero crear actualizar y borrar un projecto para controlar las transacciones",
+        "description": "",
+        "id": "projecto;como-usuario-quiero-crear-actualizar-y-borrar-un-projecto-para-controlar-las-transacciones",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "runner.Runner.afterHook()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "que tengo acceso al API de todo.ly",
+            "match": {
+              "location": "runner.MyStepAPI.queTengoAccesoAlAPIDeTodoLy()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 491000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "yo ejecuto un POST request a \"http://todo.ly/api/projects.json\" con el body",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"http://todo.ly/api/projects.json\"",
+                  "offset": 29
+                }
+              ],
+              "location": "runner.MyStepAPI.yoEjecutoUnPOSTRequestAConElBody(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When ",
+            "doc_string": {
+              "line": 8,
+              "value": "{\n  \"Content\":\"CUCUMBER\",\n  \"Icon\":\"2\"\n}"
+            }
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "yo espero que el codigo de respuesta sea 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 41
+                }
+              ],
+              "location": "runner.MyStepAPI.yoEsperoQueElCodigoDeRespuestaSea(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 69000000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "espero que el Content sea \"CUCUMBER\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"CUCUMBER\"",
+                  "offset": 26
+                }
+              ],
+              "location": "runner.MyStepAPI.esperoQueElContentSea(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 26000000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "yo recupero el Id del projecto en ID_PROJECT",
+            "match": {
+              "location": "runner.MyStepAPI.yoRecuperoElIdDelProjectoEnID_PROJECT()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 367000000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "yo ejecuto un PUT request a \"http://todo.ly/api/projects/ID_PROJECT.json\" con el body",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"http://todo.ly/api/projects/ID_PROJECT.json\"",
+                  "offset": 28
+                }
+              ],
+              "location": "runner.MyStepAPI.yoEjecutoUnPUTRequestAConElBody(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When ",
+            "doc_string": {
+              "line": 18,
+              "value": "{\n  \"Content\":\"CUCUMBERUPDATE\",\n  \"Icon\":\"2\"\n}"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "yo espero que el codigo de respuesta sea 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 41
+                }
+              ],
+              "location": "runner.MyStepAPI.yoEsperoQueElCodigoDeRespuestaSea(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 20000000,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "espero que el Content sea \"CUCUMBERUPDATE\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"CUCUMBERUPDATE\"",
+                  "offset": 26
+                }
+              ],
+              "location": "runner.MyStepAPI.esperoQueElContentSea(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 410000000,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "yo ejecuto un DELETE request a \"http://todo.ly/api/projects/ID_PROJECT.json\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"http://todo.ly/api/projects/ID_PROJECT.json\"",
+                  "offset": 31
+                }
+              ],
+              "location": "runner.MyStepAPI.yoEjecutoUnDELETERequestA(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "yo espero que el codigo de respuesta sea 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 41
+                }
+              ],
+              "location": "runner.MyStepAPI.yoEsperoQueElCodigoDeRespuestaSea(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 20000000,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "espero que el Content sea \"CUCUMBERUPDATE\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"CUCUMBERUPDATE\"",
+                  "offset": 26
+                }
+              ],
+              "location": "runner.MyStepAPI.esperoQueElContentSea(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@API"
+          }
+        ]
+      }
+    ],
+    "name": "Projecto",
+    "description": "",
+    "id": "projecto",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/CRUDProjectoAPI.feature",
+    "tags": []
+  }
+]
