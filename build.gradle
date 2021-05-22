@@ -30,14 +30,32 @@ dependencies {
 
 }
 
-/*
-dependencies {
-    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.6.0'
-    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'
+configurations {
+    cucumberRuntime {
+        extendsFrom testImplementation
+    }
 }
 
-test {
-    useJUnitPlatform()
+task cucumber() {
+    dependsOn assemble, testClasses
+    doLast {
+        javaexec {
+            main = "io.cucumber.core.cli.Main"
+            classpath = configurations.cucumberRuntime + sourceSets.main.output + sourceSets.test.output
+            args = ['--plugin', 'json:build/reports/cucumber/report.json', '--glue', 'runner', 'src/test/resources', '--tags']+[testsuite]
+        }
+    }
 }
 
- */
+task cucumberAll() {
+    dependsOn assemble, testClasses
+    doLast {
+        javaexec {
+            main = "io.cucumber.core.cli.Main"
+            classpath = configurations.cucumberRuntime + sourceSets.main.output + sourceSets.test.output
+            args = ['--plugin', 'pretty', '--glue', 'runner', 'src/test/resources']
+        }
+    }
+}
+
+

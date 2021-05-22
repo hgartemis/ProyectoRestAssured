@@ -1,3 +1,5 @@
+runner/MyStepAPI.java
+ runner.MyStepAPI
 BasicCode/BasicExampleSchemaValidation.java
  BasicCode.BasicExampleSchemaValidation
 factoryRequest/RequestGET.java
@@ -10,23 +12,37 @@ factoryRequest/RequestPUT.java
  factoryRequest.RequestPUT
 BasicCode/BasicCreateProject.java
  BasicCode.BasicCreateProject
-factoryRequest/RequestDELETE.java
- factoryRequest.RequestDELETE
+BasicCode/BasicPruebas.java
+ BasicCode.BasicPruebas
+helpers/JsonHelper.java
+ helpers.JsonHelper
 factoryRequest/FactoryRequest.java
  factoryRequest.FactoryRequest
 factoryRequest/IRequest.java
  factoryRequest.IRequest
+runner/MyStepClean.java
+ runner.MyStepClean
 factoryRequest/RequestPOST.java
  factoryRequest.RequestPOST
 BasicCode/BasicCRUDProjectToken.java
  BasicCode.BasicCRUDProjectToken
 helpers/Constantes.java
  helpers.Constantes
+helpers/LocalReport.java
+ helpers.LocalReport
 helpers/Environment.java
  helpers.Environment
 helpers/ConfigurationAPI.java
  helpers.ConfigurationAPI
+runner/MyStepdefs.java
+ runner.MyStepdefs
+factoryRequest/RequestDELETE.java
+ factoryRequest.RequestDELETE
 BasicCode/BasicJUnit.java
  BasicCode.BasicJUnit
-BasicCode/BasicPruebas.java
- BasicCode.BasicPruebas
+BasicCode/BasicCRUDTask.java
+ BasicCode.BasicCRUDTask
+helpers/GetProperties.java
+ helpers.GetProperties
+runner/Runner.java
+ runner.Runner
