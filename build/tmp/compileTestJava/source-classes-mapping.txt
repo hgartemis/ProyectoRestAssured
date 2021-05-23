@@ -20,8 +20,8 @@ factoryRequest/FactoryRequest.java
  factoryRequest.FactoryRequest
 factoryRequest/IRequest.java
  factoryRequest.IRequest
-runner/MyStepClean.java
- runner.MyStepClean
+BasicCode/BasicJUnit.java
+ BasicCode.BasicJUnit
 factoryRequest/RequestPOST.java
  factoryRequest.RequestPOST
 BasicCode/BasicCRUDProjectToken.java
@@ -30,19 +30,19 @@ helpers/Constantes.java
  helpers.Constantes
 helpers/LocalReport.java
  helpers.LocalReport
-helpers/Environment.java
- helpers.Environment
-helpers/ConfigurationAPI.java
- helpers.ConfigurationAPI
+runner/Runner.java
+ runner.Runner
+BasicCode/BasicCRUDTask.java
+ BasicCode.BasicCRUDTask
 runner/MyStepdefs.java
  runner.MyStepdefs
 factoryRequest/RequestDELETE.java
  factoryRequest.RequestDELETE
-BasicCode/BasicJUnit.java
- BasicCode.BasicJUnit
-BasicCode/BasicCRUDTask.java
- BasicCode.BasicCRUDTask
+helpers/Environment.java
+ helpers.Environment
+helpers/ConfigurationAPI.java
+ helpers.ConfigurationAPI
 helpers/GetProperties.java
  helpers.GetProperties
-runner/Runner.java
- runner.Runner
+runner/MyStepClean.java
+ runner.MyStepClean
